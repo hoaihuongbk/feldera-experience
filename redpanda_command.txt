@@ -1,0 +1,5 @@
+-- create topic potential_brute_force
+rpk -X brokers=127.0.0.1:19092 topic create potential_brute_force
+
+-- subscribe to the topic potential_brute_force
+rpk -X brokers=127.0.0.1:19092 topic consume potential_brute_force -f '%v'

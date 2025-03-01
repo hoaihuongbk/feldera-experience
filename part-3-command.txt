@@ -1,0 +1,14 @@
+rpk -X brokers=127.0.0.1:19092 cluster metadata
+
+rpk -X brokers=127.0.0.1:19092 topic create price preferred_vendor
+
+
+echo '
+{"delete": {"part": 1, "vendor": 2, "price": 10000}}
+{"insert": {"part": 1, "vendor": 2, "price": 30000}}
+{"delete": {"part": 2, "vendor": 1, "price": 15000}}
+{"insert": {"part": 2, "vendor": 1, "price": 50000}}
+{"insert": {"part": 1, "vendor": 3, "price": 20000}}
+{"insert": {"part": 2, "vendor": 3, "price": 11000}}' | rpk -X brokers=127.0.0.1:19092 topic produce price -f '%v'
+
+

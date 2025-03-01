@@ -1,0 +1,4 @@
+/.idea/
+/.venv/
+/uv.lock
+/app/data/potential_brute_force/
