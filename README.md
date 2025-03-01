@@ -2,8 +2,6 @@
 
 This project demonstrates a real-time brute-force detection pipeline using Feldera and Redpanda.  For a complete explanation, including the code and detailed analysis, see my blog post: [here](https://codecookcash.substack.com/p/detecting-brute-force-attacks-in)
 
-## Quick Start
-
 ## Prerequisites
 * Docker and Docker Compose.
 
