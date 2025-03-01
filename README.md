@@ -9,8 +9,8 @@ This project demonstrates a real-time brute-force detection pipeline using Felde
 2. **Clone and Run:**
 
 ```bash
-git clone https://github.com/your-username/your-repository.git # Replace with your repo URL
-cd your-repository
+git clone https://github.com/hoaihuongbk/feldera-experience
+cd feldera-experience
 make setup
 ```
 
